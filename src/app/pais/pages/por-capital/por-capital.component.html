@@ -1,0 +1,40 @@
+<h2>Por capital</h2>
+<hr />
+<div class="row">
+  <div class="col">
+    <app-pais-input
+      (onEnter)="buscar($event)"
+      (onDevounce)="sugerencias($event)"
+      placeholder="Buscar capital..."
+    ></app-pais-input>
+  </div>
+</div>
+<ul class="list-group" *ngIf="mostrarSugerencias">
+  <a
+    *ngFor="let pais of paisesSugeridos"
+    [routerLink]="['/pais', pais.cca2]"
+    class="nav-link"
+  >
+    <li class="list-group-item list-group-item-action">
+      <span>{{ pais.name.common }} -- {{ pais.capital }} </span>
+    </li>
+  </a>
+  <a class="nav-link">
+    <li
+      class="list-group-item list-group-item-action"
+      (click)="buscarSugerido(termino)"
+    >
+      Buscar {{ termino }}
+    </li>
+  </a>
+</ul>
+<hr />
+<div class="alert alert-danger" *ngIf="hayError">
+  No hay resultados pra la búsqueda ADFAF
+</div>
+
+<div *ngIf="!hayError" class="row">
+  <div class="col">
+    <app-pais-tabla [paises]="paises"></app-pais-tabla>
+  </div>
+</div>

@@ -2,6 +2,8 @@
 Pequeño proyecto en Ángular para desarollar conceptos básicos
 Conectamos con la api de https://restcountries.com/ y creamos las siguientes secciones.
 
+Demo: https://extraordinary-pixie-9f0ba2.netlify.app/
+
 Con este ejericios se entrenan:
  -Uso de rutas
  -Pipes
@@ -22,3 +24,4 @@ Con este ejericios se entrenan:
 ## Tecnoloǵias
 - Angular
 - Bootstrap
+- Desplegado en netlify

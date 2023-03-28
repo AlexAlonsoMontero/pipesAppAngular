@@ -2,7 +2,7 @@
 Pequeño proyecto en Ángular para desarollar conceptos básicos
 Conectamos con la api de https://restcountries.com/ y creamos las siguientes secciones.
 
-Demo: https://extraordinary-pixie-9f0ba2.netlify.app/
+Demo: https://angular-buscador-paises-alex.netlify.app/
 
 Con este ejericios se entrenan:
  -Uso de rutas
